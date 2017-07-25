@@ -8,8 +8,12 @@ namespace HelloVisual
         {
             Console.WriteLine("Hello Visual Studio");
 
-            Console.WriteLine("Press any key to exit");
-            Console.ReadKey();
+            Console.WriteLine("Enter 'Y' to start over");
+            string keyStroke = Console.ReadLine();
+            if (keyStroke == "Y" || keyStroke == "y")
+            {
+                Main();
+            }
 
         }
     }
